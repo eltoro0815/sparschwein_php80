@@ -44,6 +44,11 @@ class Booking extends Model
         return $date->format('Y-m-d H:i:s');
     }
 
+    public function makeDateToNow()
+    {
+        $this->date = date('d.m.Y H:i:s');
+    }
+
     public function getDateAttribute($value)
     {
         return $value ? Carbon::createFromFormat('Y-m-d H:i:s', $value)->format(config('project.datetime_format')) : null;

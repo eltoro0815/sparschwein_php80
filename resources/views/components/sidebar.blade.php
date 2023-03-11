@@ -34,12 +34,12 @@
             <!-- Heading -->
 
             <ul class="md:flex-col md:min-w-full flex flex-col list-none">
-                <li class="items-center">
+                <!-- <li class="items-center">
                     <a href="{{ route("admin.home") }}" class="{{ request()->is("admin") ? "sidebar-nav-active" : "sidebar-nav" }}">
                         <i class="fas fa-tv"></i>
                         {{ trans('global.dashboard') }}
                     </a>
-                </li>
+                </li> -->
 
                 @can('user_management_access')
                     <li class="items-center">

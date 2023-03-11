@@ -12,6 +12,8 @@ class Create extends Component
     public function mount(Booking $booking)
     {
         $this->booking = $booking;
+
+        $this->booking->makeDateToNow();
     }
 
     public function render()
